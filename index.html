@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Ballet&family=Dancing+Script:wght@500&display=swap"
+        rel="stylesheet">
+    <style>
+        body{
+             background: url(scenaio.jpg);
+        }
+        .dropbtn {
+            background: url(blu.jpg);
+            color: white;
+            padding: 16px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            margin-right: 30px;
+            border-radius: 10px;
+            font-family: 'Dancing Script', cursive;
+                    
+        }
+
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: crimson;
+            color: white;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            overflow: auto;
+
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        .show {
+            display: block;
+        }
+        h1{
+            font-family: 'Dancing Script', cursive;
+        }
+        p{
+            font-family: 'Dancing Script', cursive;
+            font-size: 25px ;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+    <h1>Success+1</h1>
+    <p>Hardwork and Practice is the key to become a successfull programmer.  .</p>
+
+    <div class="dropdown">
+        <button id="myBtn" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button id="myBtn-2" class="dropbtn">about</button>
+        <div id="myDropdown-2" class="dropdown-content">
+            <p> hello, this is my website and i am going to teach you javascript. but i dont know js
+        </div>
+    </div>
+    <div class="dropdown">
+        <button id="mybtn-3" class="dropbtn">Contact</button>
+        <div id="myDropdown-3" class="dropdown-content">
+            <i class="fas fa-phone">9284598290</i>
+            <br />
+            <i class="fa fa-map-marker" aria-hidden="true">Ashti,Gadchiroli</i>
+        </div>
+    </div>
+
+    <script>
+        
+        document.getElementById("myBtn").onmouseover = function () {
+            myFunction()
+        };
+
+        document.getElementById("myBtn-2").onclick = function () {
+            myFun()
+        };
+
+        document.getElementById("mybtn-3").onclick = function () {
+            myFunc()
+        };
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        function myFun() {
+            document.getElementById("myDropdown-2").classList.toggle("show");
+        }
+        function myFunc() {
+            document.getElementById("myDropdown-3").classList.toggle("show");
+        }
+    </script>
+
+</body>
+
+</html>
